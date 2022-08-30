@@ -19,3 +19,5 @@ const PORT = 8080;
 httpServer.listen(8080, () => {
   console.log(`HTTP server started at port: ${PORT}`);
 });
+
+export default app;

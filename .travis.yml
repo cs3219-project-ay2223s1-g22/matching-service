@@ -1,0 +1,10 @@
+language: node_js
+
+services:
+  - docker
+
+before_script:
+  - docker build --target test -t matching-service-test .
+
+script:
+  - docker run --name matching-service-test-container matching-service-test
